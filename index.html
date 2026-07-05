@@ -3,15 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WinnerFit — acompanhe saúde, exercícios e amigos em um app fitness gratuito.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-  <title>Document</title>
+  <title>WinnerFit — Seu app de vida fitness</title>
 </head>
 <body>
+  <header class="header">
+    <a href="#" class="logo" aria-label="WinnerFit — início">
+      <span class="logo__circle">WF</span>
+      <span class="logo__name">WinnerFit</span>
+    </a>
+    <a href="#download" class="btn btn--header">Download</a>
+  </header>
 
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__col hero__col--left">
+        <p class="hero__eyebrow">App de acompanhamento fitness</p>
+        <h1 id="hero-title" class="hero__title">
+          Seu corpo evolui. Acompanhe cada passo da jornada.
+        </h1>
+      </div>
+
+      <div class="hero__col hero__col--center">
+        <figure class="hero__phone phone-showcase">
+          <img
+            src="imgs/print_1.png"
+            alt="Tela inicial do app WinnerFit com resumo diário de atividades"
+            width="320"
+            height="640"
+            class="hero__print"
+          >
+        </figure>
+      </div>
+
+      <div class="hero__col hero__col--right">
+        <ul class="hero__highlights">
+          <li class="hero__highlight">
+            <span class="hero__highlight-icon" aria-hidden="true">❤️</span>
+            <span>Saúde</span>
+          </li>
+          <li class="hero__highlight">
+            <span class="hero__highlight-icon" aria-hidden="true">🏃🏾‍♂️</span>
+            <span>Exercício</span>
+          </li>
+          <li class="hero__highlight">
+            <span class="hero__highlight-icon" aria-hidden="true">👩🏼‍🤝‍👨🏾</span>
+            <span>Amigos</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <h2 id="features-title" class="visually-hidden">Funcionalidades do app</h2>
+
+      <article class="feature">
+        <figure class="feature__media phone-showcase">
+          <img
+            src="imgs/print_2.png"
+            alt="Tela de contagem de calorias do WinnerFit"
+            width="300"
+            height="600"
+            class="feature__print"
+            loading="lazy"
+          >
+        </figure>
+        <div class="feature__content">
+          <h3 class="feature__title">Contagem de calorias</h3>
+          <p class="feature__text">
+            Registre refeições e veja seu balanço energético em tempo real.
+            Metas claras, histórico simples e controle total da alimentação
+            no dia a dia.
+          </p>
+        </div>
+      </article>
+
+      <article class="feature feature--reverse">
+        <figure class="feature__media phone-showcase">
+          <img
+            src="imgs/print_3.png"
+            alt="Tela de exercícios específicos como corrida e musculação"
+            width="300"
+            height="600"
+            class="feature__print"
+            loading="lazy"
+          >
+        </figure>
+        <div class="feature__content">
+          <h3 class="feature__title">Exercícios específicos</h3>
+          <p class="feature__text">
+            Corrida, musculação, yoga e muito mais — escolha a modalidade,
+            acompanhe séries, distância e progresso com treinos pensados
+            para o seu ritmo.
+          </p>
+        </div>
+      </article>
+
+      <article class="feature feature--social">
+        <div class="feature__visual">
+          <div class="feature__aura" aria-hidden="true"></div>
+          <div class="feature__rings" aria-hidden="true">
+            <span class="feature__ring feature__ring--move"></span>
+            <span class="feature__ring feature__ring--exercise"></span>
+            <span class="feature__ring feature__ring--stand"></span>
+          </div>
+          <figure class="feature__media phone-showcase phone-showcase--spotlight">
+            <img
+              src="imgs/print_4.png"
+              alt="Tela de compartilhamento de conquistas com amigos"
+              width="300"
+              height="600"
+              class="feature__print"
+              loading="lazy"
+            >
+          </figure>
+        </div>
+        <div class="feature__content">
+          <p class="feature__tag">Comunidade</p>
+          <h3 class="feature__title">Compartilhe com amigos</h3>
+          <p class="feature__text">
+            Celebre metas, desafie a galera e mantenha a motivação em alta.
+            Sua evolução fica mais leve quando você treina junto com quem
+            importa.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta" id="download" aria-labelledby="cta-title">
+      <div class="cta__inner">
+        <p class="cta__badge">Totalmente gratuito</p>
+        <h2 id="cta-title" class="cta__title">Baixe agora e comece hoje</h2>
+        <p class="cta__text">
+          Sem assinatura, sem pegadinha. Tudo que você precisa para cuidar
+          da saúde no bolso.
+        </p>
+        <a href="#" class="btn btn--cta">Download gratuito</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">
+      2026 — Todos os direitos reservados @winnertech
+    </p>
+    <nav class="footer__nav" aria-label="Links do rodapé">
+      <a href="#">Contador de calorias</a>
+      <a href="#">Blog</a>
+      <a href="#">Termos</a>
+      <a href="#">Privacidade</a>
+      <a href="#">Contato</a>
+      <a href="#">API</a>
+      <a href="#">Feedback</a>
+      <a href="#">Regras da comunidade</a>
+    </nav>
+  </footer>
 </body>
 </html>
